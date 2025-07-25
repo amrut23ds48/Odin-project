@@ -6,3 +6,64 @@
 html{
     font-family: cursive, sans-serif;
 }
+a{
+    text-decoration: none;
+    border: 2px solid black;
+    width: 60px;
+    height: auto;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 5px auto;
+    display: block;
+}
+a:hover{
+    background-color: rgba(214, 214, 250, 0.863);
+}
+
+.top{
+    width: 700px;
+    height: auto;
+    margin: 10px auto;
+    padding: 30px;
+    border: 5px solid gray;
+    border-radius: 20px;
+    background-color: rgb(202, 202, 255);
+}
+.top h1, .top h2, .top p{
+    text-align: center;
+    margin: 10px auto;
+}
+img{
+    display: block;
+    margin: 10px auto;
+    border-radius: 20px;
+}
+
+.bottom{
+    margin: 10px auto;
+    padding: 30px;
+    border: 5px solid gray;
+    border-radius: 20px;
+    background-color: rgb(202, 202, 255);
+    overflow: hidden;
+}
+.bottom .left{
+    display: block;
+    float: left;
+    width: 350px;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+}
+.bottom .right{
+    display: block;
+    float: right;
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+}
+.right h2{
+    text-align: center;
+    margin-left: -20px;
+}
