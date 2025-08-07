@@ -34,7 +34,8 @@ header{
     display: flex;
     color: white;
     flex-direction: column;
-    align-items: center;;
+    align-items: center;
+    height: 350px;
 }
 nav{
     width: 100%;
@@ -64,19 +65,22 @@ a{
     display: flex;
     justify-content: space-around;
     margin-bottom: 2em;
+    padding: 2em 0;
 }
 
 .left{
     width: 50%;
     height: auto;
-   
+}
+.left p{
+    color: rgba(236, 236, 236, 0.719);
 }
 .left h1{
     font-size: var(--hero-main-text);
     color: var(--hero-color);
     font-weight: var(--hero-wt);
 }
-.left button{
+button{
     background-color: var(--btn-color);
     color: #f9faf8;
     font-size: 1em;
@@ -94,4 +98,91 @@ a{
     align-items: center;
     justify-content: center;
     background-color: #707f96de;
+}
+
+section{
+    width: 100%;
+    height: 400px;
+}
+
+section h1{
+    text-align: center;
+    font-size: var(--info-head-size);
+    color: var(--info-head-color);
+    font-weight: var(--info-head-weight);
+    padding: 1em 0;
+}
+.cards{
+    display: flex;;
+    justify-content: space-around;
+}
+
+.card{
+    width: 150px;
+    height: auto;
+    text-align: center;;
+}
+
+.card .square{
+    width: 150px;
+    height: 150px;
+    border: 4px solid var(--btn-color);
+    border-radius: 10px;
+}
+
+.quote{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--quote-bg);
+}
+.quote p{
+    width: 50%;
+    font-size: var(--quote-text-size);
+    color: rgb(97, 95, 95);
+    font-style: italic;;
+}
+.quote .author{
+    align-self: flex-end;
+    color: var(--quote-color);
+}
+
+.last{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.last-section{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--btn-color);
+    padding: 2em 0;
+    border-radius: 10px;
+}
+.last-section .cta{
+    color: white;
+}
+h3{
+    margin: 0;
+}
+.last-section p{
+    margin-top: 0.25em;
+    padding: 0;
+    color: rgb(224, 218, 218);
+}
+.last-section button{
+    border: 2px solid white;
+}
+
+footer{
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(224, 218, 218);
+    height: 5em;
 }
