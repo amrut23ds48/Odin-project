@@ -1,7 +1,23 @@
 :root{
     --background-color: #1f2937;
-    --header-main-text: 48px;
-    --header-color: #f9faf8;
+    --hero-main-text: 48px;
+    --hero-color: #f9faf8;
     --hero-wt: 900;
+    --hero-sec-color: #efe7eb;
+    --hero-sec-size: 18px;
+    --header-logo-size: 24px;
+    --header-logo-color: #f9faf8;
+    --btn-color: #3882f6;
+    --info-head-size: 36px;
+    --info-head-color: #1f2937; 
+    --info-head-weight: 900;
+    --quote-bg: #e5e7eb;
+    --quote-text-size: 36px;
+    --quote-color: ##1f2937;
+}
 
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto', sans-serif;
 }
