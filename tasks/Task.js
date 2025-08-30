@@ -16,12 +16,7 @@
                 listOfTasks.removeChild(li);
             }
         });
-        //if target class = update
-        //  navigate to current list
-        //  select and trim first child
-        //  prompt for update with first child
-        //  if prompt not null 
-        //      firstchild.text = new prompt
+       
         listOfTasks.addEventListener('click', (e) =>{
             if(e.target.classList.contains('update')){
                 const li = e.target.parentNode.parentNode;

@@ -1,5 +1,10 @@
 let humanScore = 0;
 let computerScore = 0;
+const choices = document.querySelectorAll(".choices");
+const start = document.querySelector(".start");
+
+start.addEventListener('click', playGame);
+
 function getComputerChoice(){
     let number = Math.floor(Math.random() * 3);
     if(number === 0){
@@ -11,8 +16,12 @@ function getComputerChoice(){
     }   
 }
 function getHumanChoice(){
-    choice = prompt("Make your choice: ");
-    return choice.toLowerCase();
+    choices.forEach((choice) => {
+        choice.addEventListener('click', (e) => {
+            console.log(e.target.innerHTML);
+            return e.target.innerHTML.toLowerCase();
+        });
+    });
 }
 function playRound(humanChoice, computerChoice){
     if(humanChoice === "rock" && computerChoice ==="paper"){
@@ -50,6 +59,7 @@ function playGame(){
         let computer = getComputerChoice();
         playRound(human, computer);
     }
+    declareWinner(humanScore, computerScore);
 }
 function declareWinner(humanScore, computerScore){
     const result = (humanScore === computerScore) ? 
